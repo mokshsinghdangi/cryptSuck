@@ -1,0 +1,483 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Josefin+Sans&family=Press+Start+2P&display=swap"); /* Press Start font, Baloo 2, Josefin */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* BACKGROUND */
+
+.area {
+  z-index: -100;
+}
+
+.circles {
+  z-index: -99;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  z-index: 99;
+}
+
+.logo a {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  padding: 0.5em 0.3em;
+  margin: 0.5em 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icons {
+  padding: 4px;
+}
+
+.items {
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.items:hover {
+  letter-spacing: 3px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu-open-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  cursor: pointer;
+}
+
+/* WELCOME HOME SECTION */
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+}
+
+.main-left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1.2em;
+  margin: 0 1em;
+}
+
+.head {
+  font-family: "Press Start 2P", cursive;
+  font-size: 4em;
+}
+
+.sub-line {
+  margin: 0.5em 0;
+  font-size: 1.3em;
+}
+
+.main-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.near-logo {
+  filter: invert(100%);
+  width: 25%;
+  margin: 1em 0;
+  animation: border 10s linear infinite;
+}
+
+.down-btn {
+  margin: 2em 0;
+  border: 2px solid rgb(119, 0, 255);
+  padding: 1em 1.7em;
+  font-size: 1.5em;
+  border-radius: 50px;
+  color: rgb(119, 0, 255);
+  transition: 0.4s;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.down-btn:hover {
+  background-color: rgb(108, 0, 231);
+  color: #fcdab7;
+}
+
+/* MONEY TRANSFER */
+
+.form {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin: 4em 0;
+  padding: 3em 1.5em;
+  background-color: rgb(28, 30, 34);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.send-head {
+  font-size: 4em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.money-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  padding: 1em;
+  width: 70%;
+}
+
+.money-form label {
+  font-size: 1.5em;
+}
+
+.money-form input {
+  padding: 0.8em 1.2em;
+  margin: 0.8em 0;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 0.9em;
+}
+
+.money-form textarea {
+  width: 100%;
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  margin: 0.8em 0;
+  outline: none;
+  font-size: 1.1em;
+}
+
+.warning {
+  color: rgb(255, 196, 0);
+  font-size: 1.3em;
+}
+
+.send-btn {
+  padding: 0.8em;
+  margin: 0.8em 0;
+  width: 30%;
+  font-size: 1.3em;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(108, 0, 231);
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.send-btn:disabled {
+  background-color: rgba(228, 27, 0, 0.739);
+}
+
+.allow-transfer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  position: absolute;
+  font-size: 1.7em;
+  text-align: center;
+  width: 80%;
+  height: 20%;
+  backdrop-filter: blur(3px) saturate(40%);
+  -webkit-backdrop-filter: blur(3px) saturate(40%);
+  background-color: rgba(29, 34, 41, 0.48);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  box-shadow: rgba(57, 57, 61, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.connect-btn {
+  padding: 1em 2em;
+  margin: 1em;
+  outline: none;
+  background-color: #ffc7b0;
+  color: #000;
+  font-family: monospace;
+  font-size: 0.7em;
+  border: 2px solid rgb(0, 17, 255);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* TRANSACTION PAGE */
+
+.transaction-section {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.transaction-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  background-color: rgba(28, 30, 34, 0.712);
+  grid-column-gap: 1em;
+  width: 90%;
+  margin: 1em 0;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.transaction-container {
+  padding: 1em 1.2em;
+  border: 1px solid #fcdab7;
+  margin: 1em 1em;
+  width: 80%;
+}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(28, 30, 34, 0.712);
+  width: 90%;
+  border-radius: 20px;
+  margin: 1em auto;
+  min-height: 20vh;
+  font-size: 1.4em;
+}
+
+.bold {
+  font-weight: bold;
+  font-family: monospace;
+  margin: 1em;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  margin-left: 2px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.footer-menu li a {
+  color: #fff;
+  font: 0.8em "monospace";
+  text-decoration: underline #fff;
+}
+
+.footer-menu li {
+  margin: 0 1em;
+}
+
+.copy {
+  color: rgb(112, 112, 112);
+}
+
+/* MOBILE Responsive */
+
+@media screen and (max-width: 1050px) {
+  /* NAVBAR */
+
+  .menu {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 1em;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 75px;
+    transition: all 0.4s cubic-bezier(0.57, 0.09, 0.48, 1.15);
+    width: 100%;
+    background-color: rgb(17, 18, 26);
+    padding: 30px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 100;
+  }
+
+  .menu-mobile li {
+    margin: 0.7em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Welcome section */
+
+  .welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .main-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-right {
+    width: 100%;
+  }
+
+  .head {
+    font-size: 2em;
+  }
+
+  .sub-line {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .down-btn {
+    margin: 1.5em 0;
+    padding: 0.7em 1.7em;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  /* Send Money */
+
+  .send-money {
+    width: 90%;
+  }
+
+  .send-head {
+    font-size: 2.5em;
+  }
+
+  .send-btn {
+    width: 50%;
+  }
+
+  .money-form {
+    width: 90%;
+  }
+
+  .money-form input {
+    width: 90%;
+  }
+
+  .money-form textarea {
+    width: 90%;
+  }
+
+  .allow-transfer {
+    padding: 1.8em 1em;
+    text-align: center;
+    font-size: 1.3em;
+    width: 80%;
+  }
+
+  /* Transaction list */
+
+  .transaction-list {
+    grid-template-columns: 90%;
+    margin-top: 2em;
+  }
+}

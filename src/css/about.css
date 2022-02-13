@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Josefin+Sans&family=Press+Start+2P&display=swap");
+/* ABOUT PAGE */
+
+.about {
+  display: flex;
+  width: 90%;
+  background-color: rgba(28, 30, 34, 0.712);
+  border-radius: 20px;
+  margin: auto;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.about-left {
+  font-family: monospace;
+  display: flex;
+  width: 4%;
+  flex-wrap: wrap;
+  font-size: 4.5em;
+  text-orientation: upright;
+}
+
+.light-color {
+  color: #fcdab7;
+}
+
+.about-right {
+  margin: 0 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-right::before {
+  content: "";
+  background-color: #424242;
+  height: 95%;
+  width: 1px;
+  padding: 0.05em;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-logo {
+  font-family: "Press Start 2P", cursive;
+  font-size: 10em;
+  margin: 0.2em 0;
+}
